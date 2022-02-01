@@ -1,0 +1,21 @@
+This is a Python flask application that connects to a MySQL Database.
+Modification of this project: https://github.com/YogoGit/Python-Web/tree/cookies
+
+Installations:
+% pip3 install Flask
+% pip3 install mysql
+% pip3 install mysql_connector_python
+
+The program will attempt to create the database 'accountsdatabase' inside the SQL localhost,
+if it doesn't already exist. Currently it logs in with root, using the terrible password
+'password01.' For this program to work, you must change the mypassword field in SQLaccess.py
+to whatever your password is for root.
+
+How to Run:
+% python3 app.py
+In your browser, load the page at http://127.0.0.1:5000
+
+Next Steps:
+If I were to develop this more I would add a way to hash passwords so they aren't displayed
+in the database as plain text. I would also probably store the session uuid in the database
+instead of in a list.
