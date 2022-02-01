@@ -46,7 +46,7 @@ def register():  # display the register page
 @app.route("/createaccount", methods=["POST"])
 def createaccount():
     # Ensure all entries were provided and the two password entries are the same, otherwise redirect them back
-    email = request.form['password']
+    email = request.form['email']
     username = request.form['username']
     password = request.form['password']
     password2 = request.form['password2']
